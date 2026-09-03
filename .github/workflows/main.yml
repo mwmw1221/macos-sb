@@ -10,8 +10,6 @@ jobs:
 
       - name: Build
         run: |
-          git clone https://git.chefkiss.dev/AppleHax/InfernoFSPatcher
-          cd InfernoFSPatcher
           cmake -S . -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=YES -DCMAKE_BUILD_TYPE=Release
           cmake --build build
 
